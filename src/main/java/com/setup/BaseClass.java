@@ -43,7 +43,7 @@ public class BaseClass extends DesiredCapabilities {
     }
 
     protected AppiumServiceBuilder appiumServiceBuilder(Capabilities capabilities) {
-        final String APPIUM_JS_PATH = System.getenv("AppData") + "/npm/node_modules/appium/build/lib/main.js";
+        final String APPIUM_JS_PATH = "C:/Users/Kuldeep_Rajdev/AppData/Roaming/npm/node_modules/appium/build/lib/main.js";
         System.out.println(APPIUM_JS_PATH);
         builder = new AppiumServiceBuilder();
         builder.withAppiumJS(new File(APPIUM_JS_PATH));
