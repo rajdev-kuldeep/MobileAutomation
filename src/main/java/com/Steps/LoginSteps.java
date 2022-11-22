@@ -19,7 +19,7 @@ public class LoginSteps extends BaseClass{
     }
 
    @When("^I enter valid credentials ([^\"]*) and ([^\"]*)$")
-    public void iAttemptLogin(String userName, String Password){
+    public void iAttemptLogin(String userName, String Password) throws InterruptedException {
        System.out.println("Checking driver in attempt" + this.androidDriver);
        LoginPage loginPage = new LoginPage(this.androidDriver);
        loginPage.loginMethod(userName, Password);

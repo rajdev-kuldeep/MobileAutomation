@@ -32,17 +32,24 @@ public class LoginPage extends BaseClass {
     @FindBy(id = "com.biforst.broonline.bigbazar:id/btn_login")
     WebElement loginButton;
 
-    public void loginMethod(String userName, String Password){
+    public void loginMethod(String userName, String Password) throws InterruptedException {
         System.out.println("Entering User Email");
         WebElement acceptAlert = androidDriver.findElement(By.id("com.android.permissioncontroller:id/permission_allow_foreground_only_button"));
-        Utilities.tapByElement(this.androidDriver, acceptAlert);
-       // WebElement userTextin = androidDriver.findElement(By.id("com.biforst.broonline.bigbazar:id/username"));
-        Utilities.tapByElement(this.androidDriver, userTextInput);
+        //Utilities.tapByElement(this.androidDriver, acceptAlert);
+        acceptAlert.click();
+        WebElement userTextin = androidDriver.findElement(By.id("com.biforst.broonline.bigbazar:id/username"));
+        WebElement passwordTextin = androidDriver.findElement(By.id("com.biforst.broonline.bigbazar:id/password"));
+        WebElement loginBtn = androidDriver.findElement(By.id("com.biforst.broonline.bigbazar:id/btn_login"));
+        System.out.println("Entering User userName");
+        userTextin.click();
+        Utilities.tapByElement(this.androidDriver, userTextin);
         Utilities.sendKeysToElement(userTextInput,userName);
         System.out.println("Entering User Password");
-        Utilities.tapByElement(this.androidDriver, passwordTextInput);
+        passwordTextin.click();
+        Utilities.tapByElement(this.androidDriver, passwordTextin);
         Utilities.sendKeysToElement(passwordTextInput,Password);
-        System.out.println("Enter User"+userName+" & Password"+Password);
+        System.out.println("Entered User"+userName+" & Password"+Password);
+        loginBtn.click();
     }
 
 }

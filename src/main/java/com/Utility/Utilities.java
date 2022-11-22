@@ -5,13 +5,9 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.touch.TapOptions;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.ElementOption;
-import io.cucumber.java.eo.Se;
 import org.openqa.selenium.WebElement;
-
 import java.time.Duration;
-import java.util.Collection;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Set;
 
 public class Utilities {
@@ -28,7 +24,7 @@ public class Utilities {
     }
 
     public static void sendKeysToElement(WebElement element, String inputText) {
-        element.sendKeys();
+        element.sendKeys(inputText);
     }
 
     public static String reverseWords(String inputString){
@@ -87,29 +83,10 @@ public class Utilities {
                 System.out.println("Duplicate Value Found; Repetition [Occurrence] of "+word+" is "+inputMap.get(word));
             }
         }
-
-
-
-
     }
 
 
     public static void main(String args[]){
-        //findDuplicateWords("My Name is Kuldeep Kuldeep my name is");
-
-
-        String s ="My name is Dharma";
-        String[] a  =s.split(" ");
-
-
-        for(int i=0;i<a.length;i++){
-            StringBuffer sb=new StringBuffer(a[i]);
-            sb.reverse();
-
-            System.out.print(sb+"  ");
-        }
-
-
     }
 
 }
