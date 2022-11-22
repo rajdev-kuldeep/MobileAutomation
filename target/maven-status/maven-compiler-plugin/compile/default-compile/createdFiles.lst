@@ -1,3 +1,7 @@
-Utility\Utilities.class
-setup\BaseClass.class
-Pages\LoginPage.class
+com\Pages\DemoPage.class
+com\setup\DriverPool.class
+com\Steps\LoginSteps.class
+com\Pages\LoginPage.class
+com\setup\BaseClass.class
+com\Utility\Utilities.class
+com\Utility\UtilitiesDemo.class

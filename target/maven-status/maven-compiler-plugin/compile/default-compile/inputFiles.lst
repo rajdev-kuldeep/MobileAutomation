@@ -1,3 +1,7 @@
-C:\Users\Kuldeep_Rajdev\IdeaProjects\MobileAutomation\src\main\java\setup\BaseClass.java
-C:\Users\Kuldeep_Rajdev\IdeaProjects\MobileAutomation\src\main\java\Utility\Utilities.java
-C:\Users\Kuldeep_Rajdev\IdeaProjects\MobileAutomation\src\main\java\Pages\LoginPage.java
+C:\Users\Kuldeep_Rajdev\IdeaProjects\MobileAutomation\src\main\java\com\setup\BaseClass.java
+C:\Users\Kuldeep_Rajdev\IdeaProjects\MobileAutomation\src\main\java\com\Steps\LoginSteps.java
+C:\Users\Kuldeep_Rajdev\IdeaProjects\MobileAutomation\src\main\java\com\setup\DriverPool.java
+C:\Users\Kuldeep_Rajdev\IdeaProjects\MobileAutomation\src\main\java\com\Utility\Utilities.java
+C:\Users\Kuldeep_Rajdev\IdeaProjects\MobileAutomation\src\main\java\com\Utility\UtilitiesDemo.java
+C:\Users\Kuldeep_Rajdev\IdeaProjects\MobileAutomation\src\main\java\com\Pages\LoginPage.java
+C:\Users\Kuldeep_Rajdev\IdeaProjects\MobileAutomation\src\main\java\com\Pages\DemoPage.java
