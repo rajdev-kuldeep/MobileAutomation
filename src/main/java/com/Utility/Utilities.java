@@ -106,7 +106,7 @@ public class Utilities {
             StringBuffer sb=new StringBuffer(a[i]);
             sb.reverse();
 
-            System.out.print(sb+" ");
+            System.out.print(sb+"  ");
         }
 
 
