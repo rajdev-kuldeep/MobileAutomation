@@ -44,7 +44,7 @@ public class BaseClass extends DesiredCapabilities {
 
     protected AppiumServiceBuilder appiumServiceBuilder(Capabilities capabilities) {
         builder = new AppiumServiceBuilder();
-        builder.withAppiumJS(new File("C:/Users/Kuldeep_Rajdev/AppData/Roaming/npm/node_modules/appium/lib/appium.js"));
+        //builder.withAppiumJS(new File("C:/Users/Kuldeep_Rajdev/AppData/Roaming/npm/node_modules/appium/lib/appium.js"));
         builder.withIPAddress("127.0.0.2");
         builder.usingAnyFreePort();
         builder.withArgument(GeneralServerFlag.BASEPATH, "/wd/hub");
